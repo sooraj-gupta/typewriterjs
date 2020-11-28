@@ -5,6 +5,35 @@
   display: none;
 }
 
+::-webkit-scrollbar {
+  	width: 12px;
+	height: 10px;
+	background-color: #fff;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #fff;
+	
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+
+  	background: #aaa; 
+  	transition: all 0.2s;
+	border-radius: 100px;
+	border: 2px solid white;
+	
+		
+}	
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
 body,html
 {
 	margin: 0;
