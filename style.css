@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
+[data-typewriter="on"] {
+  display: none;
+}
+
+body,html
+{
+	margin: 0;
+	padding: 0;
+}
+.title
+{
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #f4f4f4;
+}
+
+
+pre {
+	
+	position: relative;
+	font-size: 15px;
+	text-align: left;
+	word-wrap: break-word;
+	word-break: break-all;
+}
+
+.h2,.h1 {
+	font-family: 'PT Sans';
+	font-size: 35px;
+	font-weight: 400;
+	text-align: left;
+	padding: 0;
+	margin: 80px 0;
+	margin-bottom: 0px;
+}
+
+.html {
+	padding: 20px;
+}
+
+.h1 {
+	font-size: 50px;
+	font-weight: 700;
+}
+
+#mainwrapper {
+	max-width: 850px;
+	width: 85vw;
+	text-align: left;
+}
+
+.caption {
+	font-size: 15px;
+	font-family: "Roboto";
+	text-align: left;
+	font-weight: 400;
+	padding: 0;
+	margin: 10px 5px;
+}
+
+.p {
+	color: #2f2f2f;
+	font-family: 'PT Serif';
+	font-size: 20px;
+	font-weight: 400;
+	margin-top: 10px;
+	line-height: 1.25em;
+}
+
+li {
+	margin-left: 1em;
+}
+
+.download {
+	padding: 20px 30px;
+	background-color: #111;
+	color: white;
+	font-family: 'PT Sans';
+	font-size: 20px;
+	text-decoration: none;
+	box-shadow: 5px 5px 15px #555;
+	transition: 0.2s;
+	margin: 30px 0px;
+	
+}
+.download:hover
+{
+	box-shadow: none;
+	background-color: #222
+}
+
+
+
+.tag {
+	font-size: 0.8em;
+	padding: 0.1em 0.25em;
+	background-color: #eee;
+	margin-bottom:2em;
+	color: #009600;
+}
+
+.code {
+	padding: 20px;
+	background-color: #efefef;
+	word-wrap: break-word;
+	word-break: break-all;
+	position: relative
+}
+
+.copy {
+	position: absolute;
+	font-family: 'PT Sans';
+	right: 1em;
+	top: 1em;
+	font-size: 18px;
+	z-index: 100;
+}
+.copy i:hover
+{
+	cursor: pointer;
+	color: darkgray	;
+}
+
+footer {
+	padding: 100px 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.mobile
+{
+	display: none;
+}
+
+@media( max-width: 630px )
+{
+	.desktop
+	{
+		display: none; !important
+	}
+	.mobile
+	{
+		display: inline-block;
+	}
+	.h1
+	{
+		font-size: 40px
+	}
+}

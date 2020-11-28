@@ -1,0 +1,172 @@
+<!--
+	TYPEWRITER.JS 
+
+	Copyright © Sooraj Gupta 2020
+	ALL CODE BY SOORAJ GUPTA
+	LAST UPDATED 11/26/2020
+-->
+
+<html>
+
+	<head>
+		<title>Typewriter.js</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.18.5/styles/github-gist.min.css">
+		<link href = "style.css" rel = "stylesheet">
+		<link href = "typewriter/typewriter.css" rel = "stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta property="og:title" content="typewriter.js" />
+		<meta property="og:description" content="An automatic typewriter animation javascript library. By Sooraj Gupta" />
+		<meta name="description" content="An automatic typewriter animation javascript library. By Sooraj Gupta" />
+		<meta property="og:image" content="ogimage.png" />
+		<meta property="og:url" content="https://sooraj-gupta.github.io/typewriterjs" />
+		<meta property="og:type" content="website" />
+		<meta property="og:locale" content="en_US" />
+		<link rel="canonical" href="https://sooraj-gupta.github.io/">
+	</head>
+	<body onload = "load()">
+		<div class = "title">
+			<center style = "">
+				<a style = "font: 24px 'PT Serif'; font-weight: 100" >This</a>
+				<a data-typewriter-fontsize = "24px" data-typewriter = "on" data-typewriter-font = "PT Serif" data-typewriter-fontweight = "100" data-typewriter-loop = "noloop"> is a website.; can type mulitple words.; is pure Javascript.; is typewriter.js.;</a><br>
+			</center>
+		</div>
+		<center style = "">
+			<div id = "mainwrapper">
+				
+				<h1 class = "h1">Giving a <span data-typewriter = "on" data-typewriter-fontsize = "50px" data-typewriter-fontweight = "700" data-typewriter-font = "PT Sans" class = "desktop">typewriter</span><span class = "mobile">typewriter</span> effect to your text</h1>
+				<h4 class = "caption"> Sooraj Gupta	<span style = "font-weight: 100">Novemeber 2020</span></h4>
+				<br><br>
+				<img id = "https://news.illinois.edu/files/6367/797226/154475.jpg" class = "load " src = "" width = "100%" alt  = "typewriter">
+				<br><br><br>
+				<p class = "p">A simple way to make any text into a typewriter. The following are some of typewriter.js's advantages:</p>
+				<li class = "p">Works with any font</li>
+				<li class = "p">Can display a sequence of words and/or phrases</li>
+				
+				<h2 class = "h2">Adding typewriter.js to your website</h2>
+				<p class = "p">First, download the .zip file and unzip it. Then move this unzipped folder into the folder of your website</p>
+				
+				<br><br>
+				
+				<a href = "typewriter.zip" class = "download">Download</a>
+				<br><br><br><br>
+				
+				<p class = 'p'>In your html file, place the following into the last line of the <code class = "tag"><span style = "color: black">&lt;</span>head<span style = "color: black">&gt;</span></code> section</p>
+				<pre><code class="code html">&lt;link href = "typewriter/typewriter.css" rel = "stylesheet"&gt;</code><a class = "copy"><i class = "fa fa-clipboard"></i></a></pre>
+				<br>
+				
+				<p class = 'p'>Then, place the following into the last line of the <code class = "tag"><span style = "color: black">&lt;</span>body<span style = "color: black">&gt;</span></code> section</p>
+				<pre><code class="code html">&lt;script src = "typewriter/typewriter.js"&gt;&lt;/script&gt;</code><a class = "copy"><i class = "fa fa-clipboard"></i></a></pre>
+				<br>
+				<p class = 'p'> Finally, locate the master.js file inside the "typewriter" folder and add this line to the end of the master.js file</p>
+				<pre><code class = "code">Typewriters.init()</code><a class = "copy"><i class = "fa fa-clipboard"></i></a></pre>
+				
+				<h2 class = "h2">Incorporating typewriter.js in HTML elements</h2>
+				<p class = "p">Take any <code class = "tag"><span style = "color: black">&lt;</span>a<span style = "color: black">&gt;</span></code> or  <code class = "tag"><span style = "color: black">&lt;</span>span<span style = "color: black">&gt;</span></code> tag and use the  <code class = "tag"><span style = "color: rebeccapurple">data-typewriter</span></code> attribute to add this element to typewriter.js. The typewriting effect can be enabled/disabled by setting this attribute to <code class = "tag"><span style = "color: black">"on"</span></code> or <code class = "tag"><span style = "color: black">"off"</span></code></p>
+				<pre><code class = "code html">&lt;a data-typewriter = "on"&gt;Hello World!&lt;/a&gt;</code><a class = "copy"><i class = "fa fa-clipboard"></i></a></pre>
+				<p class = p>Results in:</p>
+				<pre><code class = "code html"><a data-typewriter = "on">Hello World!</a></code></pre>
+				
+				<br>
+				<p class = "p">To change the font specifications for a specific element. Add the <code class = "tag"><span style = "color: rebeccapurple">data-typewriter-font</span></code>, <code class = "tag"><span style = "color: rebeccapurple">data-typewriter-fontsize</span></code>, and/or <code class = "tag"><span style = "color: rebeccapurple">data-typewriter-fontweight</span></code> attributes.</p>
+				
+				<pre><code class = "code html">&lt;a data-typewriter = "on" data-typewriter-fontsize = "15px" data-typewriter-fontweight = "700" data-typewriter-font = "PT Sans"&gt;Hello World (but small)!&lt;/a&gt; &nbsp;</code><a class = "copy"><i class = "fa fa-clipboard"></i></a></pre>
+				<p class = p>Results in:</p>
+				<pre><code class = "code html"><a data-typewriter = "on" data-typewriter-fontsize = "15px" data-typewriter-fontweight = "700" data-typewriter-font = "PT Sans">Hello World (but small)!</a> </code></pre>
+				
+				
+				<h2 class = "h2">Changing the default settings</h2>
+				<p class = "p">To change the default settings for the font, timing, etc. Make changes to the "settings.js" file</p>
+				<pre><code class = "code">var settings = 
+{
+	//Default font-family
+	"font": "Arial",
+	
+	//Default font size;
+	"fontsize": "15px",
+	
+	//Default Font weight
+	"fontweight": "300",
+	
+	//Time to wait at end of typing before deleting
+	"timer": 40,
+	
+	//delay between typing each letter
+	"delay": 40,
+	
+	//cursor blink time
+	"cursor": 500
+	
+};</code></pre>
+				
+				<h2 class = "h2">Adding a sequence of <span data-typewriter = "on" data-typewriter-fontsize = "35px" data-typewriter-font = "PT Sans" data-typewriter-fontweight = "400" class = "desktop">words;phrases;sentences</span> <span class = "mobile">phrases</span></h2>
+				<p class = "p"> Similar to the title of this page, multiple phrases can be played in a sequence by adding a <code class = "tag"><span style = "color: black">;</span></code>(semicolon) after every phrase. To change only a section of a sentance simply add another <code class = "tag"><span style = "color: black">&lt;</span>a<span style = "color: black">&gt;</span></code> or  <code class = "tag"><span style = "color: black">&lt;</span>span<span style = "color: black">&gt;</span></code> tag before or after the typewriter text.</p>
+				
+				<pre><code class = "code html">&lt;a&gt;Hello &lt;/a&gt;&lt;a data-typewriter = "on"&gt;World!;Earth!;Planet!&lt;/a&gt;</code><a class = "copy"><i class = "fa fa-clipboard"></i></a></pre>
+				<p class = p>Results in:</p>
+				<pre><code class = "code html"><a style = "font: 25px 'PT Serif'">Hello </a><a data-typewriter = "on">World!;Earth!;Planet!</a></code></pre>
+				
+				<h2 class = "h2">More settings</h2>
+				<p class = "p">The effect can play once or repeat indefinitely if you add the attribute <code class = "tag"><span style = "color: rebeccapurple">data-typewriter-loop</span></code> and specify it as <code class = "tag"><span style = "color: black">"loop"</span></code> or <code class = "tag"><span style = "color: black">"noloop"</span></code>. The default is a loop</p>
+				<pre><code class = "code html">&lt;a data-typewriter = "on" data-typewriter-loop = "noloop"&gt;Hello World&lt;/a&gt;</code><a class = "copy"><i class = "fa fa-clipboard"></i></a></pre>
+				<p class = p>Results in:</p>
+				<pre><code class = "code html"><a data-typewriter = "on" data-typewriter-loop = "noloop">Hello World!</a></code></pre>
+				<br>
+				<p class = "p">More will be added soon!</p>
+				<br>
+				<hr>
+				<br>
+				<br>
+				<br>
+
+				<a href = "typewriter.zip" class = "download">Download the .zip file</a>
+				<br><br><br><br>
+				
+				
+			</div>
+			<footer>
+				<div>
+					<a data-typewriter = "on" data-typewriter-font = "PT Sans">typewriter.js</a>
+					<br><br>
+					<img style = "width: 40px;" src = 'https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png' onclick = "window.location = 'https://github.com/sooraj-gupta'">
+					<h3 class = "caption" style = "font-family: 'PT Serif'">Copyright © Sooraj Gupta 2020</h3>
+				</div>
+			</footer>
+		</center>
+	<script src = "typewriter/typewriter.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.4.0/highlight.min.js"></script>
+	<script>
+		document.addEventListener('DOMContentLoaded', (event) => {
+			document.querySelectorAll('pre code').forEach((block) => {
+				hljs.highlightBlock(block);
+		  	});
+		});
+		function copyToClipboard( str ){
+		  const el = document.createElement('textarea');
+		  el.value = str;
+		  document.body.appendChild(el);
+		  el.select();
+		  document.execCommand('copy');
+		  document.body.removeChild(el);
+		};
+		var i = 0;
+		var copies = document.getElementsByClassName("copy");
+		for( i = 0; i < copies.length; i++ )
+		{
+			console.log( copies[i].previousElementSibling );
+			copies[i].onclick = function()
+			{
+				copyToClipboard( this.previousElementSibling.innerText );
+			}
+		}
+		var loads = document.getElementsByClassName( "load" );
+		function load()
+		{
+			for ( var i = 0; i < loads.length; i++ )
+			{
+				loads[i].src = loads[i].id;		
+			}
+		}
+	</script>
+	</body>
+</html>
