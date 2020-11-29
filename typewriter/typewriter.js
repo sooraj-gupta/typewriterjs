@@ -14,4 +14,6 @@ function include( file )
 	document.getElementsByTagName('body').item(0).appendChild(scr); 
 }
 include( 'typewriter/settings.js' );
-include( 'typewriter/master.js' );
+setTimeout( function(){
+	include( 'typewriter/master.js' );
+}, 100 ); 
