@@ -9,11 +9,6 @@
   	width: 12px;
 	height: 10px;
 	background-color: #fff;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #fff;
 	
 }
  
@@ -24,13 +19,14 @@
   	transition: all 0.2s;
 	border-radius: 100px;
 	border: 2px solid white;
+	background-image: url('https://media.istockphoto.com/photos/brown-wood-texture-dark-wooden-abstract-background-picture-id1137996207?k=6&m=1137996207&s=612x612&w=0&h=Eli8yvjTkBpkkT7QZj_hd2wbdKojeNHcxmo209SN1MM=');
 	
 		
 }	
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+	background-image: url('https://image.shutterstock.com/image-photo/wood-background-texture-260nw-450225307.jpg')
 }
 
 
@@ -180,4 +176,37 @@ footer {
 	{
 		font-size: 40px
 	}
+}
+
+#popup {
+	left: calc( 25vw );
+	top: calc( -100vh );
+	position: fixed;
+	width: 50vw;
+	height: 50vh;
+	max-height: 50vw;
+	background-color: white;
+	box-shadow: 0px 0px 100px #444;
+	border-radius: 10px;
+	display: none;
+	transition: 0.5s;
+	transition-timing-function: cubic-bezier(0,0,0.3,1.5);
+}
+
+#popup div{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 1000;
+	width: 100%;
+	height: 100%;
+	flex-direction: column;
+}
+
+#popup > span {
+	position: absolute;
+	right: 20px;
+	top: 18px;
+	font-size: 24px;
+	color: #aaa;
 }

@@ -134,6 +134,15 @@
 				
 				
 			</div>
+			<div id = "popup">
+				<span id = "close">&#10005;</span>
+				<div>
+					<h2 class = "h2" data-typewriter = "on" style = "margin: 0; padding: 0;" data-typewriter-fontsize = "40px" data-typewriter-font = "PT Sans" data-typewriter-fontweight = "400">typewriter.js</h2>
+					<br>
+					<br>
+					<a class = "download" href = "https://github.com/sooraj-gupta/typewriterjs" style = "margin: 0; background-color: black;">Visit Github</a>
+				</div>
+			</div>
 			<footer>
 				<div>
 					<a data-typewriter = "on" data-typewriter-font = "PT Sans">typewriter.js</a>
@@ -175,6 +184,53 @@
 			for ( var i = 0; i < loads.length; i++ )
 			{
 				loads[i].src = loads[i].id;		
+			}
+		}
+		
+		setTimeout( popup, 25000 );
+		
+		function popup()
+		{
+			document.getElementById( "mainwrapper" ).style.filter = "blur( 1.5px )";
+			document.getElementsByClassName( "title" )[0].style.filter = "blur( 1.5px )";
+			document.getElementById( "mainwrapper" ).style.pointerEvents = "none";
+			document.getElementsByClassName( "title" )[0].style.pointerEvents = "none";
+			document.getElementById( "mainwrapper" ).style.userSelect = "none";
+			document.getElementsByClassName( "title" )[0].style.userSelect = "none";
+			
+			document.getElementById("popup").style.display = "block";
+			setTimeout( function(){
+				document.getElementById("popup").style.top = "27vh";
+			}, 10);
+			setTimeout( function(){
+				document.getElementById("popup").style.top = "23vh";
+			}, 540);
+			setTimeout( function(){
+				document.getElementById("popup").style.top = "25vh";
+			}, 1060);
+			document.body.addEventListener( "click", function( event )
+				{
+				document.getElementById("popup").style.top = "-75vh";
+				document.getElementById( "mainwrapper" ).style.filter = "blur( 0px )";
+				document.getElementsByClassName( "title" )[0].style.filter = "blur( 0px )";
+				document.getElementById( "mainwrapper" ).style.pointerEvents = "all";
+				document.getElementsByClassName( "title" )[0].style.pointerEvents = "all";
+				document.getElementById( "mainwrapper" ).style.userSelect = "all";
+				document.getElementsByClassName( "title" )[0].style.userSelect = "all";
+			});
+			document.getElementById("close").addEventListener( "click", function( event )
+				{
+				document.getElementById("popup").style.top = "-75vh";
+				document.getElementById( "mainwrapper" ).style.filter = "blur( 0px )";
+				document.getElementsByClassName( "title" )[0].style.filter = "blur( 0px )";
+				document.getElementById( "mainwrapper" ).style.pointerEvents = "all";
+				document.getElementsByClassName( "title" )[0].style.pointerEvents = "all";
+				document.getElementById( "mainwrapper" ).style.userSelect = "all";
+				document.getElementsByClassName( "title" )[0].style.userSelect = "all";
+			});
+			document.getElementById( "popup" ).onclick = function( event )
+			{
+				event.stopImmediatePropagation();
 			}
 		}
 	</script>
