@@ -34,6 +34,7 @@ body,html
 {
 	margin: 0;
 	padding: 0;
+	
 }
 .title
 {
@@ -74,6 +75,7 @@ pre {
 }
 
 #mainwrapper {
+	
 	max-width: 850px;
 	width: 85vw;
 	text-align: left;
@@ -179,9 +181,9 @@ footer {
 }
 
 #popup {
+	position: fixed;
 	left: calc( 25vw );
 	top: calc( -100vh );
-	position: fixed;
 	width: 50vw;
 	height: 50vh;
 	max-height: 50vw;

@@ -22,7 +22,7 @@ var settings =
 	"timer": 20,
 	
 	//delay between typing each letter
-	"delay": 30,
+	"delay": 40,
 	
 	//cursor blink time
 	"cursor": 500
