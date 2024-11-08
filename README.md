@@ -3,7 +3,7 @@ A JavaScript library which allows you to easily add a "typewriter" effect to any
 
 ## Download
 Download this zip file and move the unzipped folder to your website folder<br><br>
-<a href="https://sooraj-gupta.github.io/typewriter.zip"><img src = "https://i.imgur.com/oZbEJwD.png" width="175"></a><br>
+<a href="https://sooraj-gupta.github.io/typewriterjs/typewriter.zip"><img src = "https://i.imgur.com/oZbEJwD.png" width="175"></a><br>
 <br>
 
 
